@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bottomsheet.dialogs.MyBottomSheetDialog
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() , MyBottomSheetDialog.BottomSheetListener{
     private lateinit var openDialogButton: Button
     private lateinit var textViewButton: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,5 +29,9 @@ class MainActivity : AppCompatActivity() {
             val myBottomSheetDialog= MyBottomSheetDialog()
             myBottomSheetDialog.show(supportFragmentManager,"Dialog")
         }
+    }
+
+    override fun onButtonClicked(input: String) {
+        textViewButton.text=input
     }
 }

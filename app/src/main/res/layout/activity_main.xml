@@ -10,15 +10,20 @@
     android:gravity="top|center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_view"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Dialog"
         android:id="@+id/btn_open_dialog"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
 
 
 </LinearLayout>
